@@ -88,7 +88,7 @@ class MazeSolver(SearchProblem):
 
 st.title('Maze Path Finder')
 
-bg_image = Image.open("maze.jpg")
+bg_image = Image.open("maze.bmp")
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.2)",
     stroke_width=5,
