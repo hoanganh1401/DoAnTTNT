@@ -1,6 +1,7 @@
 import math
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 from PIL import Image
@@ -88,7 +89,7 @@ class MazeSolver(SearchProblem):
 
 st.title('Maze Path Finder')
 
-bg_image = Image.open("maze.png")
+bg_image = Image.open(os.path.abspath("maze.png"))
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.2)",
     stroke_width=5,
